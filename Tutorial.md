@@ -10,7 +10,7 @@ Creating a task for online SMR analysis: Users can input GWAS summary data, sele
 
 1) **Upload GWAS summary data file**
 
-	Please upload the GWAS summary statistics. It is recommended to use the GCTA-COJO format, although other formats are also supported.
+	Please upload the GWAS summary statistics (a demo is available in [data/demo/GWAS.tar.gz](data/demo/GWAS.tar.gz)). It is recommended to use the GCTA-COJO format, although other formats are also supported.
 
 	**GCTA-COJO format**
 
@@ -41,7 +41,7 @@ Creating a task for online SMR analysis: Users can input GWAS summary data, sele
 
 	Users who wish to conduct SMR analysis using their own xQTL summary data need to upload their xQTL in BESD format. To create a BESD file from data in various formats, please visit [https://yanglab.westlake.edu.cn/software/smr/#MakeaBESDfile](https://yanglab.westlake.edu.cn/software/smr/#MakeaBESDfile).
 	
-	We recommend that you follow the data processing guidelines below to upload your own xQTL file.
+	We recommend that you follow the data processing guidelines below to upload your own xQTL file (a demo is available in [data/demo/xQTL_archive.tar.gz](data/demo/xQTL_archive.tar.gz)).
 
 	1) **First, you need to process your own xQTL data into the query format.**
 
