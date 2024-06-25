@@ -4,16 +4,21 @@
 
 ![SMR Portal Overview](https://static.westlakefuturegene.com/smr_images/SMR_Portal_Overview.png)
 
-
 ### Online SMR analysis
 
 The online SMR analysis module simplifies the SMR & HEIDI analysis processes so that users only need to provide GWAS summary statistics for a trait of interest. The platform provides users with access to 106 pre-built xQTL summary datasets, including 51 eQTL, 50sQTL, 2 mQTL and 3 pQTL datasets, spanning 4 omics layers, and 49 tissues ([xQTL_list.xlsx](data/database/)). Additionally, it offers users the flexibility to upload their own customized xQTL data. An online log file is available for users to monitor the progress of the analysis. Upon completion of the online SMR analyses, an email notification containing a hyperlink is sent to the designated email address, allowing users to access and visualize the results in the SMR-Portal.
 
+![Online SMR analysis](https://static.westlakefuturegene.com/smr_images/About_analysis.png)
+
 ### SMR database
 The SMR database is a continuously updated resource with visualization capabilities for pre-computed SMR results, covering a broad spectrum of complex traits with available large-scale GWAS summary statistics. It catalogues over 60,255 significant gene-trait associations derived from SMR & HEIDI analyses, encompassing 213 GWAS traits ([GWAS_list.xlsx](data/database/)) and 106 xQTL datasets. Users can query a gene or trait of interest, and the database will display significant gene-trait associations across various xQTL datasets, spanning multiple omics layers and tissues.
 
+![SMR database](https://static.westlakefuturegene.com/smr_images/About_database.png)
+
 ### Locus visualization
 The locus visualization module provides interactive tools for visualizing GWAS, xQTL, and SMR association signals, along with genomic and epigenomic annotations in the locus identified by SMR & HEIDI. The visualization begins with the GWAS locus plot and the xQTL locus plots for molecular phenotypes associated with traits; the primary purpose of these plots is to show whether the GWAS signals coincide with the xQTL signals (i.e., the pleiotropy or causality model). Below the locus plots, a heatmap illustrates the chromatin states of the specified region across different cell types or tissues, using data from the Roadmap Epigenomics Mapping Consortium (REMC). These epigenomic annotations assist users in identifying functional elements, such as promoters, transcribed regions, and enhancers, along with their potential cell or tissue type specificity. In summary, the locus visualization module enhances our understanding of genetic regulatory mechanisms by demonstrating how genetic variants, potentially located within functional elements, affect one or more traits through molecular phenotypes.
+
+![Locus visualization](https://static.westlakefuturegene.com/smr_images/About_visualization.png)
 
 ## Links
 
