@@ -1,6 +1,8 @@
 # A case study of using SMR-Portal.
 
-Here, we use **type 2 diabetes (T2D)** as a case study to illustrate how to utilize SMR Portal for exploring gene-trait associations. A total of 370 genes were identified by the SMR & HEIDI analyses using summary statistics from a large-scale GWAS (80,154 T2D cases and 853,816 controls, all of European ancestry) ([PMID: 35551307](10.1038/s41588-022-01058-3)) and all the pre-built xQTL datasets through online analyses (**Figure 1**), which have been incorporated into the SMR database. Taking the *KCNJ11* gene as an example, the SMR and HEIDI analyses suggest that eQTL signals of *KCNJ11* in blood, brain, and esophagus, an sQTL signal in brain and skeletal muscle, and an mQTL signal in blood all coincide with the T2D GWAS signal at the *KCNJ11* gene locus, implying its role in T2D pathogenesis. The association of *KCNJ11* expression in each of these tissues with T2D can be visualized using the `Locus plot` function, and a `Multi-xQTL locus plot` to display the associations of *KCNJ11* with T2D across multiple tissues and/or xQTL layers simultaneously (**Figure 2**). Additionally, clicking the `Trait-wise Visualization` button redirects to a new webpage, which displays a list of all genes identified for T2D on the left-hand side, and a multi-xQTL locus plot of a selected locus on the right-hand side (**Figure 3**). When querying *KCNJ11*, users can investigate the presence of other associated genes in this locus, `chr11:16585616-17896930`. Notably, other prioritized genes in this locus include *NCR3LG1*, *ABCC8*, *PIK3C2A*, *NUCB2*, and *PLEKHA7*. Among these, *KCNJ11* and *ABCC8* are known targets for T2D therapy ([PMID: 12540637](10.2337/diabetes.52.2.568); [PMID: 26551672](10.1038/ng.3437)). The `Trait-wise Visualization` page features two interfaces: `The Most Significant` and `All xQTL Datasets`. `The Most Significant` interface displays each gene within the locus alongside the most significant SMR p-value for each omics layer. For a more detailed and customizable visualization, the `All xQTL Datasets` interface presents SMR results from various xQTL datasets, allowing users to select specific tissues or omics layers to generate customized locus plots (**Figure 4**).
+Here, we use **type 2 diabetes (T2D)** as a case study to illustrate how to utilize SMR Portal for exploring gene-trait associations. A total of 370 genes were identified by the SMR & HEIDI analyses using summary statistics from a large-scale GWAS (80,154 T2D cases and 853,816 controls, all of European ancestry) ([PMID: 35551307](10.1038/s41588-022-01058-3)) and all the pre-built xQTL datasets through online analyses (**Figure. 1**), which have been incorporated into the SMR database. Taking the *KCNJ11* gene as an example, the SMR and HEIDI analyses suggest that eQTL signals of *KCNJ11* in blood, brain, and esophagus, an sQTL signal in brain and skeletal muscle, and an mQTL signal in blood all coincide with the T2D GWAS signal at the *KCNJ11* gene locus, implying its role in T2D pathogenesis. The association of *KCNJ11* expression in each of these tissues with T2D can be visualized using the 'Locus plot' function, and a 'Multi-trait/xQTL locus plot' to display the associations of *KCNJ11* with T2D across multiple tissues and/or xQTL layers simultaneously (**Figure. 2a**). Additionally, clicking the 'Trait-wise Visualization' button redirects to a new webpage, which displays a list of all genes identified for T2D on the left-hand side, and a multi-xQTL locus plot of a selected locus on the right-hand side (**Figure. 3**). When querying *KCNJ11*, users can investigate the presence of other associated genes in this locus, 'chr11:16585616-17896930'. Notably, other prioritized genes in this locus include *NCR3LG1*, *ABCC8*, *PIK3C2A*, *NUCB2*, and *PLEKHA7*. Among these, *KCNJ11* and *ABCC8* are known targets for T2D therapy ([PMID: 12540637](10.2337/diabetes.52.2.568); [PMID: 26551672](10.1038/ng.3437)). The 'Trait-wise Visualization' page features two interfaces: 'The Most Significant' and 'All xQTL Datasets'. 'The Most Significant' interface displays each gene within the locus alongside the most significant SMR p-value for each omics layer. For a more detailed and customizable visualization, the 'All xQTL Datasets' interface presents SMR results from various xQTL datasets, allowing users to select specific tissues or omics layers to generate customized locus plots (**Figure. 4**). In addition, researchers interested in identifying multiple traits associated with the specific gene *KCNJ11* can use the database page to search for *KCNJ11*. This search will reveal multiple traits linked to the gene, such as type 2 diabetes, HbA1c, diabetes, and glucose levels. Users can then visualize the results for several traits related to the same gene/locus simultaneously using the 'Multi-trait/xQTL locus plot' (**Figure. 2b**). This visualization helps demonstrate scenarios where genetic associations for multiple complex traits and molecular phenotypes may be influenced by the same causal variant(s) (**Figure. 5**).
+
+# Online analysis
 
 ## Figure 1. Creating a task for online SMR analysis
 
@@ -10,7 +12,7 @@ Creating a task for online SMR analysis: Users can input GWAS summary data, sele
 
 1) **Upload GWAS summary data file**
 
-	Please upload the GWAS summary statistics (a demo is available in [data/demo/GWAS.tar.gz](data/demo/GWAS.tar.gz)). It is recommended to use the GCTA-COJO format, although other formats are also supported.
+	Please upload the GWAS summary statistics (a demo is available here [GWAS.tar.gz](https://static.westlakefuturegene.com/smr_files/GWAS.txt.gz)). It is recommended to use the GCTA-COJO format, although other formats are also supported.
 
 	**GCTA-COJO format**
 
@@ -96,33 +98,33 @@ Creating a task for online SMR analysis: Users can input GWAS summary data, sele
 
 4) **Finally, users can upload the `xQTL_archive.tar.gz` file to conduct SMR analysis using their own xQTL data.**
 
+# SMR database
+
 ## Figure 2. Querying the SMR database
 
 Querying the SMR database: Users can search for a gene or trait of interest in the SMR database.
 
-![Querying the SMR database](https://static.westlakefuturegene.com/smr_images/tutorial_2.png)
+![Querying the SMR database](https://static.westlakefuturegene.com/smr_images/Tutorial_2.png)
 
 `Trait-wise Visualization`
 
-Provides locus plot visualizations for all gene-trait associations related to a selected trait.
+This plot function enables users to visualize locus plots for all gene-trait associations related to a specific trait.
 
 `Locus plot`
 
-Users can select a specific gene-xQTL-phenotype association to generate a locus plot.
+This plot function allows users to generate a locus plot by selecting a specific gene-xQTL-phenotype association.
 
-`Multi-xQTL locus plot`
+`Multi-xQTL/trait locus plot`
 
-Users can select gene-trait associations across multiple tissues and/or xQTL layers simultaneously to generate a locus plot that spans these categories.
+This plot function enables users to simultaneously explore gene-trait associations across multiple genes, omics layers, tissues, and traits, providing detailed visualizations of complex genetic interactions. (<span style="color: red;">Note: **Multiple traits** plot is available only when a gene is searched. (Figure. 2b, Figure. 5)</span>)
 
-`Muti-trait locus plot`
-
-For a specific gene, users can select gene-trait associations across multiple traits, as well as incorporate multiple tissues and xQTL layers for simultaneous visualization.
+# Locus visualization
 
 ## Figure 3. Trait-wise visualization
 
 This webpage features a table on the left-hand side that lists prioritized genes, with the right-hand side presenting the locus plot for a selected locus. The tissue with the most significant SMR p-value is highlighted for each omics layer.
 
-![Trait-wise visualization](https://static.westlakefuturegene.com/smr_images/tutorial_3.png)
+![Trait-wise visualization](https://static.westlakefuturegene.com/smr_images/Tutorial_3.png)
 
 `The Most Significant`
 
@@ -137,15 +139,22 @@ Specifically:
 
 The red marker in the upper right corner indicates a *P*<sub>*HEIDI*</sub> > 0.01.
 
-# Figure 4. Customizing xQTL datasets for the locus plot
+Only gene-trait associations within the same locus can be plotted.
+
+## Figure 4. Customizing xQTL datasets for the locus plot
 
 In the “All xQTL datasets” interface, users can select xQTL from different tissues or omics layers to create a customized locus plot as shown in **Figure 3**.
 
-![Customizing xQTL datasets for the locus plot](https://static.westlakefuturegene.com/smr_images/tutorial_4.png)
+![Customizing xQTL datasets for the locus plot](https://static.westlakefuturegene.com/smr_images/Tutorial_4.png)
 
 `All xQTL Datasets`
 
 Display all selected xQTL -log<sub>10</sub>(*P*<sub>*SMR*</sub>) results for each gene in a tabular format , including only genes that exhibit significant *P*<sub>*SMR*</sub> values in at least one xQTL dataset. Users have the option to select any genes of interest along with their respective xQTL datasets to generate locus plots, which can be used to explore gene-trait associations across multiple tissues.
 
+Only gene-trait associations within the same locus can be plotted.
 
+## Figure 5. Multiple-trait visualization
 
+The multi-trait locus plot illustrates the associations of a single gene with multiple traits simultaneously, demonstrating scenarios where genetic associations for multiple complex traits and molecular phenotypes may be influenced by the same causal variant(s).
+
+![Customizing xQTL datasets for the locus plot](https://static.westlakefuturegene.com/smr_images/Tutorial_5.png)

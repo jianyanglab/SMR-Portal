@@ -11,7 +11,7 @@ The online SMR analysis module simplifies the SMR & HEIDI analysis processes so 
 <!-- ![Online SMR analysis](https://static.westlakefuturegene.com/smr_images/About_analysis.png) -->
 
 ### SMR database
-The SMR database is a continuously updated resource with visualization capabilities for pre-computed SMR results, covering a broad spectrum of complex traits with available large-scale GWAS summary statistics. It catalogues over 60,255 significant gene-trait associations derived from SMR & HEIDI analyses, encompassing 213 GWAS traits ([GWAS_list.xlsx](data/database/)) and 106 xQTL datasets. Users can query a gene or trait of interest, and the database will display significant gene-trait associations across various xQTL datasets, spanning multiple omics layers and tissues.
+The SMR database is a continuously updated resource with visualization capabilities for pre-computed SMR results, covering a broad spectrum of complex traits with available large-scale GWAS summary statistics. It catalogues over 61,092 significant gene-trait associations derived from SMR & HEIDI analyses, encompassing 213 GWAS traits ([GWAS_list.xlsx](data/database/)) and 106 xQTL datasets. Users can query a gene or trait of interest, and the database will display significant gene-trait associations across various xQTL datasets, spanning multiple omics layers and tissues.
 
 <!-- ![SMR database](https://static.westlakefuturegene.com/smr_images/About_database.png) -->
 
