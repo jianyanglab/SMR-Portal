@@ -185,7 +185,8 @@ def parse_besd_one_gene(file_path,
 #%%
 if __name__ == '__main__':
     # example usage
-    QTL_file_prefix = '/storage/yangjianLab/sharedata/molecular_QTL/eQTL/gtex_resources_besd/sQTL_hg38/sQTL_besd_hg38/Whole_Blood_sQTL_all_chr1'
+    # QTL_path ...
+    QTL_file_prefix = 'data/Wole_Blood_sQTL_all_chr1'
     besd_file_path = '%s.besd' % QTL_file_prefix
     esi_file_path = '%s.esi' % QTL_file_prefix
     epi_file_path = '%s.epi' % QTL_file_prefix

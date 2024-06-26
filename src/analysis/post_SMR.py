@@ -241,10 +241,10 @@ def fetch_SMR_result_xQTL(trait_name, QTL_type, cojo_gene_df, running_data_dir, 
 @click.command()
 @click.argument('trait_name')
 @click.option('--gencode_file',
-              default="/storage/yangjianLab/qiting/data/annotation/gencode/gencode.v40.GRCh38.gene.annotation.bed",
+              default="data/gencode.v40.GRCh38.gene.annotation.bed",
               help='Path to the GENCODE file.')
 @click.option('--bim_file',
-              default="/storage/yangjianLab/sharedata/LD_reference/UKB/genotype_10K/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
+              default="data/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
               help='Path to the BIM file.')
 @click.option('--qtl_categories', '-q', multiple=True, type=click.Choice(['eQTL', 'sQTL', 'mQTL', 'xQTL', 'pQTL']),
               help='QTL categories to process.')
@@ -530,12 +530,12 @@ class TEST_POST_SMR_SCZ(TEST_POST_SMR):
     def __init__(self):
         super().__init__(
             trait_name='trait',
-            gencode_file="/storage/yangjianLab/qiting/data/annotation/gencode/gencode.v40.GRCh38.gene.annotation.bed",
-            bim_file="/storage/yangjianLab/sharedata/LD_reference/UKB/genotype_10K/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
+            gencode_file="data/gencode.v40.GRCh38.gene.annotation.bed",
+            bim_file="data/genotype_10K/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
             qtl_categories=['eQTL', 'sQTL', 'mQTL'],
-            save_dir='/storage/yangjianLab/chenwenhao/tmp/gamma_speedup',
-            running_data_dir='/storage/yangjianLab/chenwenhao/tmp/gamma_speedup/1765301475388424192',
-            gwas_file='/storage/yangjianLab/sharedata/GWAS_summary/01_Public/01_cojo/Xue_et_al_T2D_META_Nat_Commun_2018.txt',
+            save_dir='data/gamma_speedup',
+            running_data_dir='data/1765301475388424192',
+            gwas_file='data/Xue_et_al_T2D_META_Nat_Commun_2018.txt',
             max_workers=10
         )
 
@@ -544,12 +544,12 @@ class TEST_pQTL(TEST_POST_SMR):
     def __init__(self):
         super().__init__(
             trait_name='T2D',
-            gencode_file="/storage/yangjianLab/qiting/data/annotation/gencode/gencode.v40.GRCh38.gene.annotation.bed",
-            bim_file="/storage/yangjianLab/sharedata/LD_reference/UKB/genotype_10K/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
+            gencode_file="data/gencode.v40.GRCh38.gene.annotation.bed",
+            bim_file="data/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
             qtl_categories=['pQTL'],
-            save_dir='/storage/yangjianLab/chenwenhao/tmp/pQTL_test',
-            running_data_dir="/storage/yangjianLab/guoyazhou/GAMMA_git_data/SMR",
-            gwas_file='/storage/yangjianLab/sharedata/GWAS_summary/01_Public/01_cojo/Xue_et_al_T2D_META_Nat_Commun_2018.txt',
+            save_dir='data/pQTL_test',
+            running_data_dir="data/SMR",
+            gwas_file='data/Xue_et_al_T2D_META_Nat_Commun_2018.txt',
             max_workers=10
         )
 
@@ -558,12 +558,12 @@ class TEST_POST_SMR_DEMO(TEST_POST_SMR):
     def __init__(self):
         super().__init__(
             trait_name='trait',
-            gencode_file="/storage/yangjianLab/qiting/data/annotation/gencode/gencode.v40.GRCh38.gene.annotation.bed",
-            bim_file="/storage/yangjianLab/sharedata/LD_reference/UKB/genotype_10K/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
+            gencode_file="data/gencode.v40.GRCh38.gene.annotation.bed",
+            bim_file="data/genotype_10K/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
             qtl_categories=['eQTL'],
-            save_dir='/storage/yangjianLab/chenwenhao/projects/0310_GAMMA/data/processed/smr_speedup_for_future_gene/demo_data_result',
-            running_data_dir='/storage/yangjianLab/chenwenhao/projects/0310_GAMMA/data/processed/smr_speedup_for_future_gene/demo_data',
-            gwas_file='/storage/yangjianLab/chenwenhao/projects/0310_GAMMA/data/processed/smr_speedup_for_future_gene/demo_data/trait_gwas.txt',
+            save_dir='data/demo_data_result',
+            running_data_dir='data/demo_data',
+            gwas_file='data/trait_gwas.txt',
             max_workers=1
         )
 
@@ -572,12 +572,12 @@ class TEST_POST_SMR_DEMO_convert_to38(TEST_POST_SMR):
     def __init__(self):
         super().__init__(
             trait_name='trait',
-            gencode_file="/storage/yangjianLab/qiting/data/annotation/gencode/gencode.v40.GRCh38.gene.annotation.bed",
-            bim_file="/storage/yangjianLab/sharedata/LD_reference/UKB/genotype_10K/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
+            gencode_file="data/gencode.v40.GRCh38.gene.annotation.bed",
+            bim_file="data/genotype_10K/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
             qtl_categories=['eQTL'],
-            save_dir='/storage/yangjianLab/chenwenhao/projects/0310_GAMMA/data/processed/smr_speedup_for_future_gene/demo_data_result',
-            running_data_dir='/storage/yangjianLab/chenwenhao/projects/0310_GAMMA/data/processed/smr_speedup_for_future_gene/demo_data',
-            gwas_file='/storage/yangjianLab/chenwenhao/projects/0310_GAMMA/data/processed/smr_speedup_for_future_gene/demo_data/trait_gwas.txt',
+            save_dir='data/demo_data_result',
+            running_data_dir='data/demo_data',
+            gwas_file='data/trait_gwas.txt',
             max_workers=1,
             convert_to_hg38=True
         )
@@ -586,15 +586,15 @@ class TEST_POST_SMR_DEMO_convert_to38_by_bim_lookup_dict(TEST_POST_SMR):
     def __init__(self):
         super().__init__(
             trait_name='trait',
-            gencode_file="/storage/yangjianLab/qiting/data/annotation/gencode/gencode.v40.GRCh38.gene.annotation.bed",
-            bim_file="/storage/yangjianLab/sharedata/LD_reference/UKB/genotype_10K/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
+            gencode_file="data/gencode.v40.GRCh38.gene.annotation.bed",
+            bim_file="data/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
             qtl_categories=['eQTL'],
-            save_dir='/storage/yangjianLab/chenwenhao/projects/0310_GAMMA/data/processed/smr_speedup_for_future_gene/demo_data_result',
-            running_data_dir='/storage/yangjianLab/chenwenhao/projects/0310_GAMMA/data/processed/smr_speedup_for_future_gene/demo_data',
-            gwas_file='/storage/yangjianLab/chenwenhao/projects/0310_GAMMA/data/processed/smr_speedup_for_future_gene/demo_data/trait_gwas.txt',
+            save_dir='data/demo_data_result',
+            running_data_dir='data/demo_data',
+            gwas_file='data/demo_data/trait_gwas.txt',
             max_workers=1,
             convert_to_hg38=True,
-            bim_lookup_dict_path='/storage/yangjianLab/chenwenhao/tmp/post_smr_debug/bim_lookup_dict_dict.pkl',
+            bim_lookup_dict_path='data/bim_lookup_dict_dict.pkl',
         )
 
 
@@ -602,13 +602,13 @@ class TEST_Yazhou_Batch_Run(TEST_POST_SMR):
     def __init__(self):
         super().__init__(
             trait_name="HBMD",
-            gwas_file="/storage/yangjianLab/sharedata/GWAS_summary/01_Public/01_cojo/Heel_bone_mineral_density_hBMD.txt",
+            gwas_file="gwas_data/Heel_bone_mineral_density_hBMD.txt",
 
-            gencode_file="/storage/yangjianLab/qiting/data/annotation/gencode/gencode.v40.GRCh38.gene.annotation.bed",
-            bim_file="/storage/yangjianLab/sharedata/LD_reference/UKB/genotype_10K/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
+            gencode_file="data/gencode.v40.GRCh38.gene.annotation.bed",
+            bim_file="data/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
             qtl_categories=['eQTL', 'sQTL', 'mQTL', ],
-            save_dir='/storage/yangjianLab/chenwenhao/tmp/post_smr_debug',
-            running_data_dir="/storage/yangjianLab/guoyazhou/GAMMA_git_data/SMR",
+            save_dir='data/post_smr_debug',
+            running_data_dir="data/SMR",
             max_workers=100,
             convert_to_hg38=True
         )
@@ -618,13 +618,13 @@ class TEST_Yazhou_Batch_Run2(TEST_POST_SMR):
     def __init__(self):
         super().__init__(
             trait_name="NAFLD",
-            gwas_file="/storage/yangjianLab/sharedata/GWAS_summary/01_Public/01_cojo/NAFL_2022_NG.txt",
+            gwas_file="gwas_data/NAFL_2022_NG.txt",
 
-            gencode_file="/storage/yangjianLab/qiting/data/annotation/gencode/gencode.v40.GRCh38.gene.annotation.bed",
-            bim_file="/storage/yangjianLab/sharedata/LD_reference/UKB/genotype_10K/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
+            gencode_file="data/gencode.v40.GRCh38.gene.annotation.bed",
+            bim_file="data/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
             qtl_categories=['eQTL', 'sQTL', 'mQTL', ],
-            save_dir='/storage/yangjianLab/chenwenhao/tmp/post_smr_debug',
-            running_data_dir="/storage/yangjianLab/guoyazhou/GAMMA_git_data/SMR",
+            save_dir='data/post_smr_debug',
+            running_data_dir="data/SMR",
             max_workers=100
         )
 
@@ -633,13 +633,13 @@ class TEST_Yazhou_Batch_Run3(TEST_POST_SMR):
     def __init__(self):
         super().__init__(
             trait_name="TS",
-            gwas_file="/storage/yangjianLab/sharedata/GWAS_summary/01_Public/01_cojo/TS_cojo_format.txt",
+            gwas_file="gwas_data/TS_cojo_format.txt",
 
-            gencode_file="/storage/yangjianLab/qiting/data/annotation/gencode/gencode.v40.GRCh38.gene.annotation.bed",
-            bim_file="/storage/yangjianLab/sharedata/LD_reference/UKB/genotype_10K/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
+            gencode_file="data/gencode.v40.GRCh38.gene.annotation.bed",
+            bim_file="data/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
             qtl_categories=['eQTL', 'sQTL', 'mQTL', ],
-            save_dir='/storage/yangjianLab/chenwenhao/tmp/post_smr_debug',
-            running_data_dir="/storage/yangjianLab/guoyazhou/GAMMA_git_data/SMR",
+            save_dir='data/post_smr_debug',
+            running_data_dir="data/SMR",
             max_workers=100
         )
 
@@ -648,13 +648,13 @@ class TEST_Yazhou_Batch_Run4(TEST_POST_SMR):
     def __init__(self):
         super().__init__(
             trait_name="010_PheCode",
-            gwas_file="/storage/yangjianLab/sharedata/GWAS_summary/01_Public/01_cojo//storage/yangjianLab/hujinpan/data/GWAS_data/fastGWAS/010_PheCode_COJO_format.txt",
+            gwas_file="gwas_data/fastGWAS/010_PheCode_COJO_format.txt",
 
-            gencode_file="/storage/yangjianLab/qiting/data/annotation/gencode/gencode.v40.GRCh38.gene.annotation.bed",
-            bim_file="/storage/yangjianLab/sharedata/LD_reference/UKB/genotype_10K/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
+            gencode_file="data/gencode.v40.GRCh38.gene.annotation.bed",
+            bim_file="data/BED_ukbEUR_imp_v3_INFO0.8_maf0.01_mind0.05_geno0.05_hwe1e6_10K_hg38_chrALL.bim",
             qtl_categories=['eQTL', 'sQTL', 'mQTL', ],
-            save_dir='/storage/yangjianLab/chenwenhao/tmp/post_smr_debug',
-            running_data_dir="/storage/yangjianLab/guoyazhou/GAMMA_git_data/SMR",
+            save_dir='data/post_smr_debug',
+            running_data_dir="data/SMR",
             max_workers=100
         )
 
@@ -678,12 +678,12 @@ if __name__ == '__main__':
 # from viztracer import VizTracer
 #
 # import os
-# os.system('rm -rf /storage/yangjianLab/chenwenhao/tmp/gamma_speedup/viztracer_result.json')
+# os.system('rm -rf data/viztracer_result.json')
 # # tracer = viztracer.VizTracer()
 # # tracer.start()
-# with VizTracer(output_file="/storage/yangjianLab/chenwenhao/tmp/gamma_speedup/viztracer_result.json") as tracer:
+# with VizTracer(output_file="data/viztracer_result.json") as tracer:
 #     test = TEST_POST_SMR_DEMO()
 #     test()
 # # tracer.stop()
-# # tracer.save('/storage/yangjianLab/chenwenhao/tmp/gamma_speedup/viztracer_result.json')
+# # tracer.save('data/viztracer_result.json')
 # # %%
