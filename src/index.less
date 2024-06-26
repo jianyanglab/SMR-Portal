@@ -1,0 +1,100 @@
+@import url("@fontsource/rubik/400.css");
+@import url("@fontsource/rubik/700.css");
+@import url("@fontsource/lexend/700.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    min-width: 1024px;
+    font-family: Rubik, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    ::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+      background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      @apply bg-gamma-primary/[.3];
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      @apply bg-gamma-primary/[.5];
+    }
+  }
+
+  body {
+    overscroll-behavior-y: none;
+  }
+
+  a {
+    @apply text-gamma;
+
+    &:hover {
+      @apply text-gamma-hover;
+    }
+
+    &:visited {
+      @apply text-gamma;
+    }
+
+    &:active {
+      @apply text-gamma-active;
+    }
+  }
+}
+
+.ant-modal {
+  .ant-modal-confirm-body .anticon {
+    font-size: 32px;
+  }
+
+  .ant-modal-confirm-content {
+    margin-inline-start: 44px !important;
+  }
+
+  .ant-modal-confirm-btns {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid rgb(0 0 0 / 8%);
+  }
+}
+
+.plugin-modal > .ant-modal {
+  .ant-modal-content {
+    border-radius: 0;
+  }
+
+  button.ant-btn-primary {
+    @apply bg-gamma-primary;
+
+    border-radius: 0;
+  }
+}
+
+.ant-popover.no-arrow .ant-popover-arrow {
+  display: none;
+}
+
+.ant-menu .ant-menu-item-divider {
+  margin-top: 4px !important;
+  margin-bottom: 8px !important;
+}
+
+.nav > .ant-menu {
+  .ant-menu-item,
+  .ant-menu-submenu {
+    line-height: 78px;
+  }
+}
+
+.ant-input-group-addon .ant-btn .anticon {
+  vertical-align: 0;
+}
+
+.mx-context-menu-scroll {
+  display: none;
+}

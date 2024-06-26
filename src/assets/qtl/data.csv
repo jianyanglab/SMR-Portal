@@ -1,0 +1,110 @@
+﻿eQTL,
+eQTLGen,eQTLGen,31684 ,Blood
+BrainMeta,eQTL_BrainMeta,2865 ,Brain
+GTEx v8 eQTL,eQTL_GTEx_Adipose_Subcutaneous,663 ,Adipose
+,eQTL_GTEx_Adipose_Visceral_Omentum,541 ,Adipose
+,eQTL_GTEx_Adrenal_Gland,258 ,Adrenal Gland
+,eQTL_GTEx_Artery_Aorta,432 ,Blood Vessel
+,eQTL_GTEx_Artery_Coronary,240 ,Blood Vessel
+,eQTL_GTEx_Artery_Tibial,663 ,Blood Vessel
+,eQTL_GTEx_Brain_Amygdala,152 ,Brain
+,eQTL_GTEx_Brain_Anterior_cingulate_cortex_BA24,176 ,Brain
+,eQTL_GTEx_Brain_Caudate_basal_ganglia,246 ,Brain
+,eQTL_GTEx_Brain_Cerebellar_Hemisphere,215 ,Brain
+,eQTL_GTEx_Brain_Cerebellum,241 ,Brain
+,eQTL_GTEx_Brain_Cortex,255 ,Brain
+,eQTL_GTEx_Brain_Frontal_Cortex_BA9,209 ,Brain
+,eQTL_GTEx_Brain_Hippocampus,197 ,Brain
+,eQTL_GTEx_Brain_Hypothalamus,202 ,Brain
+,eQTL_GTEx_Brain_Nucleus_accumbens_basal_ganglia,246 ,Brain
+,eQTL_GTEx_Brain_Putamen_basal_ganglia,205 ,Brain
+,eQTL_GTEx_Brain_Spinal_cord_cervical_c-1,159 ,Brain
+,eQTL_GTEx_Brain_Substantia_nigra,139 ,Brain
+,eQTL_GTEx_Breast_Mammary_Tissue,459 ,Breast Mammary
+,eQTL_GTEx_Cells_Cultured_fibroblasts,504 ,Skin
+,eQTL_GTEx_Cells_EBV-transformed_lymphocytes,174 ,Blood Vessel
+,eQTL_GTEx_Colon_Sigmoid,373 ,Colon
+,eQTL_GTEx_Colon_Transverse,406 ,Colon
+,eQTL_GTEx_Esophagus_Gastroesophageal_Junction,375 ,Esophagus
+,eQTL_GTEx_Esophagus_Mucosa,555 ,Esophagus
+,eQTL_GTEx_Esophagus_Muscularis,515 ,Esophagus
+,eQTL_GTEx_Heart_Atrial_Appendage,429 ,Heart
+,eQTL_GTEx_Heart_Left_Ventricle,432 ,Heart
+,eQTL_GTEx_Kidney_Cortex,85 ,Kidney
+,eQTL_GTEx_Liver,226 ,Liver
+,eQTL_GTEx_Lung,578 ,Lung
+,eQTL_GTEx_Minor_Salivary_Gland,162 ,Minor Salivary Gland
+,eQTL_GTEx_Muscle_Skeletal,803 ,Muscle Skeletal
+,eQTL_GTEx_Nerve_Tibial,619 ,Nerve Tibial
+,eQTL_GTEx_Ovary,180 ,Ovary
+,eQTL_GTEx_Pancreas,328 ,Pancreas
+,eQTL_GTEx_Pituitary,283 ,Pituitary
+,eQTL_GTEx_Prostate,245 ,Prostate
+,eQTL_GTEx_Skin_Not_Sun_Exposed_Suprapubic,604 ,Skin
+,eQTL_GTEx_Skin_Sun_Exposed_Lower_leg,701 ,Skin
+,eQTL_GTEx_Small_Intestine_Terminal_Ileum,187 ,Small Intestine Terminal Ileum
+,eQTL_GTEx_Spleen,241 ,Spleen
+,eQTL_GTEx_Stomach,359 ,Stomach
+,eQTL_GTEx_Testis,361 ,Testis
+,eQTL_GTEx_Thyroid,653 ,Thyroid
+,eQTL_GTEx_Uterus,142 ,Uterus
+,eQTL_GTEx_Vagina,156 ,Vagina
+,eQTL_GTEx_Whole_Blood,755 ,Whole Blood
+sQTL,
+BrainMeta,sQTL_BrainMeta,2865 ,Brain
+GTEx v8 sQTL,sQTL_GTEx_Adipose_Subcutaneous,663 ,Adipose
+,sQTL_GTEx_Adipose_Visceral_Omentum,541 ,Adipose
+,sQTL_GTEx_Adrenal_Gland,258 ,Adrenal Gland
+,sQTL_GTEx_Artery_Aorta,432 ,Blood Vessel
+,sQTL_GTEx_Artery_Coronary,240 ,Blood Vessel
+,sQTL_GTEx_Artery_Tibial,663 ,Blood Vessel
+,sQTL_GTEx_Brain_Amygdala,152 ,Brain
+,sQTL_GTEx_Brain_Anterior_cingulate_cortex_BA24,176 ,Brain
+,sQTL_GTEx_Brain_Caudate_basal_ganglia,246 ,Brain
+,sQTL_GTEx_Brain_Cerebellar_Hemisphere,215 ,Brain
+,sQTL_GTEx_Brain_Cerebellum,241 ,Brain
+,sQTL_GTEx_Brain_Cortex,255 ,Brain
+,sQTL_GTEx_Brain_Frontal_Cortex_BA9,209 ,Brain
+,sQTL_GTEx_Brain_Hippocampus,197 ,Brain
+,sQTL_GTEx_Brain_Hypothalamus,202 ,Brain
+,sQTL_GTEx_Brain_Nucleus_accumbens_basal_ganglia,246 ,Brain
+,sQTL_GTEx_Brain_Putamen_basal_ganglia,205 ,Brain
+,sQTL_GTEx_Brain_Spinal_cord_cervical_c-1,159 ,Brain
+,sQTL_GTEx_Brain_Substantia_nigra,139 ,Brain
+,sQTL_GTEx_Breast_Mammary_Tissue,459 ,Breast Mammary
+,sQTL_GTEx_Cells_Cultured_fibroblasts,504 ,Skin
+,sQTL_GTEx_Cells_EBV-transformed_lymphocytes,174 ,Blood Vessel
+,sQTL_GTEx_Colon_Sigmoid,373 ,Colon
+,sQTL_GTEx_Colon_Transverse,406 ,Colon
+,sQTL_GTEx_Esophagus_Gastroesophageal_Junction,375 ,Esophagus
+,sQTL_GTEx_Esophagus_Mucosa,555 ,Esophagus
+,sQTL_GTEx_Esophagus_Muscularis,515 ,Esophagus
+,sQTL_GTEx_Heart_Atrial_Appendage,429 ,Heart
+,sQTL_GTEx_Heart_Left_Ventricle,432 ,Heart
+,sQTL_GTEx_Kidney_Cortex,85 ,Kidney
+,sQTL_GTEx_Liver,226 ,Liver
+,sQTL_GTEx_Lung,578 ,Lung
+,sQTL_GTEx_Minor_Salivary_Gland,162 ,Minor Salivary Gland
+,sQTL_GTEx_Muscle_Skeletal,803 ,Muscle Skeletal
+,sQTL_GTEx_Nerve_Tibial,619 ,Nerve Tibial
+,sQTL_GTEx_Ovary,180 ,Ovary
+,sQTL_GTEx_Pancreas,328 ,Pancreas
+,sQTL_GTEx_Pituitary,283 ,Pituitary
+,sQTL_GTEx_Prostate,245 ,Prostate
+,sQTL_GTEx_Skin_Not_Sun_Exposed_Suprapubic,604 ,Skin
+,sQTL_GTEx_Skin_Sun_Exposed_Lower_leg,701 ,Skin
+,sQTL_GTEx_Small_Intestine_Terminal_Ileum,187 ,Small Intestine Terminal Ileum
+,sQTL_GTEx_Spleen,241 ,Spleen
+,sQTL_GTEx_Stomach,359 ,Stomach
+,sQTL_GTEx_Testis,361 ,Testis
+,sQTL_GTEx_Thyroid,653 ,Thyroid
+,sQTL_GTEx_Uterus,142 ,Uterus
+,sQTL_GTEx_Vagina,156 ,Vagina
+,sQTL_GTEx_Whole_Blood,755 ,Whole Blood
+pQTL,
+INTERVAL,pQTL_INTERVAL,3301 ,Blood
+UK Biobank,pQTL_UKB,54219 ,Blood
+SCALLOP,pQTL_SCALLOP,30931	,Blood
+mQTL,
+BrainMeta,mQTL_BrainMeta,1160 ,Brain
+LBC + BSGS,mQTL_McRae,1980 ,Blood
