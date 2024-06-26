@@ -6,12 +6,12 @@
 
 ### Online SMR analysis
 
-The online SMR analysis module simplifies the SMR & HEIDI analysis processes so that users only need to provide GWAS summary statistics for a trait of interest. The platform provides users with access to 106 pre-built xQTL summary datasets, including 51 eQTL, 50sQTL, 2 mQTL and 3 pQTL datasets, spanning 4 omics layers, and 49 tissues ([xQTL_list.xlsx](data/database/)). Additionally, it offers users the flexibility to upload their own customized xQTL data. An online log file is available for users to monitor the progress of the analysis. Upon completion of the online SMR analyses, an email notification containing a hyperlink is sent to the designated email address, allowing users to access and visualize the results in the SMR-Portal.
+The online SMR analysis module simplifies the SMR & HEIDI analysis processes so that users only need to provide GWAS summary statistics for a trait of interest. The platform provides users with access to 106 pre-built xQTL summary datasets, including 51 eQTL, 50sQTL, 2 mQTL and 3 pQTL datasets, spanning 4 omics layers, and 49 tissues ([SMR_Portal_Supplementary.xlsx](data/database/)). Additionally, it offers users the flexibility to upload their own customized xQTL data. An online log file is available for users to monitor the progress of the analysis. Upon completion of the online SMR analyses, an email notification containing a hyperlink is sent to the designated email address, allowing users to access and visualize the results in the SMR-Portal.
 
 <!-- ![Online SMR analysis](https://static.westlakefuturegene.com/smr_images/About_analysis.png) -->
 
 ### SMR database
-The SMR database is a continuously updated resource with visualization capabilities for pre-computed SMR results, covering a broad spectrum of complex traits with available large-scale GWAS summary statistics. It catalogues over 61,092 significant gene-trait associations derived from SMR & HEIDI analyses, encompassing 213 GWAS traits ([GWAS_list.xlsx](data/database/)) and 106 xQTL datasets. Users can query a gene or trait of interest, and the database will display significant gene-trait associations across various xQTL datasets, spanning multiple omics layers and tissues.
+The SMR database is a continuously updated resource with visualization capabilities for pre-computed SMR results, covering a broad spectrum of complex traits with available large-scale GWAS summary statistics. It catalogues over 61,092 significant gene-trait associations derived from SMR & HEIDI analyses, encompassing 213 GWAS traits ([SMR_Portal_Supplementary.xlsx](data/database/)) and 106 xQTL datasets. Users can query a gene or trait of interest, and the database will display significant gene-trait associations across various xQTL datasets, spanning multiple omics layers and tissues.
 
 <!-- ![SMR database](https://static.westlakefuturegene.com/smr_images/About_database.png) -->
 
