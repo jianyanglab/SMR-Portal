@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "*.css": "postcss",
+    "*.less": "postcss"
+  },
+  "css.customData": [".vscode/tailwind.json"]
+}

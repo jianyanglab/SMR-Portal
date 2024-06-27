@@ -5,8 +5,6 @@ import { useAuthStore } from '@/stores'
 
 const service = axios.create()
 const ownHostList = [
-  'smr.westlakefuturegene.com',
-  'smr-test.westlakefuturegene.com',
   'yanglab.westlake.edu.cn',
   'localhost',
 ]
