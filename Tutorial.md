@@ -1,4 +1,4 @@
-# A case study of using SMR-Portal.
+# A case study of using SMR-Portal
 
 Here, we use **type 2 diabetes (T2D)** as a case study to illustrate how to utilize SMR Portal for exploring gene-trait associations.
 
@@ -20,7 +20,7 @@ By facilitating comprehensive analysis and visualization of GWAS and xQTL data, 
 
 Creating a task for online SMR analysis: Users can input GWAS summary data, select pre-built xQTL datasets, and, if available, their own uploaded xQTL data, then submit the job for online processing.
 
-![Creating a task for online SMR analysis](https://static.westlakefuturegene.com/smr_images/tutorial_1.png)
+![Creating a task for online SMR analysis](https://static.westlakefuturegene.com/smr_images/Tutorial_1.png)
 
 1) **Upload GWAS summary data file**
 
@@ -38,7 +38,7 @@ Creating a task for online SMR analysis: Users can input GWAS summary data, sele
 	......
 	```
 
-	Columns are SNP, the effect allele (A1), the other allele (A2), frequency of the effect allele (freq), effect size (b), standard error (se), p-value (p) and sample size (n). The headers are not keywords and will be omitted by the program. <span style="color: red;">**Important: “A1” needs to be the effect allele with “A2” being the other allele and “freq” needs to be the frequency of “A1”.**</span>
+	Columns are SNP, the effect allele (A1), the other allele (A2), frequency of the effect allele (freq), effect size (b), standard error (se), p-value (p) and sample size (n). The headers are not keywords and will be omitted by the program. <span style="color: red;">Important: “A1” needs to be the effect allele with “A2” being the other allele and “freq” needs to be the frequency of “A1”.</span>
 
 	**NOTE:**
     1) For a case-control study, the effect size should be log(odds ratio) with its corresponding standard error.
@@ -55,7 +55,7 @@ Creating a task for online SMR analysis: Users can input GWAS summary data, sele
 
 	Users who wish to conduct SMR analysis using their own xQTL summary data need to upload their xQTL in BESD format. To create a BESD file from data in various formats, please visit [https://yanglab.westlake.edu.cn/software/smr/#MakeaBESDfile](https://yanglab.westlake.edu.cn/software/smr/#MakeaBESDfile).
 	
-	We recommend that you follow the data processing guidelines below to upload your own xQTL file (a demo is available in [data/demo/xQTL_archive.tar.gz](data/demo/xQTL_archive.tar.gz)).
+	We recommend that you follow the data processing guidelines below to upload your own xQTL file (a demo is available here [xQTL_archive.tar.gz](https://static.westlakefuturegene.com/smr_files/xQTL_archive.tar.gz)).
 
 	1) **First, you need to process your own xQTL data into the query format.**
 
@@ -128,7 +128,16 @@ This plot function allows users to generate a locus plot by selecting a specific
 
 `Multi-xQTL/trait locus plot`
 
-This plot function enables users to simultaneously explore gene-trait associations across multiple genes, omics layers, tissues, and traits, providing detailed visualizations of complex genetic interactions. (<span style="color: red;">Note: **Multiple traits** plot is available only when a gene is searched. (Figure. 2b, Figure. 5)</span>)
+This plot function enables users to simultaneously explore gene-trait associations across multiple genes, omics layers, tissues, and traits, providing detailed visualizations of complex genetic interactions.
+
+**Note:**
+
+<span style="color: red;">**Selection Limitation**</span>
+- Only associations within a ±2Mb range of the initially selected position can be plotted.
+
+<span style="color: red;">**Multi-trait Selection**</span >
+- Select an association within this trait and search for another trait to create a multi-trait locus plot.
+- Multi-trait locus plot is also available when a gene is searched (**Figure. 2b, Figure. 5**).
 
 # Locus visualization
 
