@@ -140,7 +140,6 @@ This plot function enables users to simultaneously explore gene-trait associatio
 - Multi-trait locus plot is also available when a gene is searched (**Figure. 2b, Figure. 5**).
 
 # Locus visualization
-
 ## Figure 3. Trait-wise visualization
 
 This webpage features a table on the left-hand side that lists prioritized genes, with the right-hand side presenting the locus plot for a selected locus. The tissue with the most significant SMR p-value is highlighted for each omics layer.
