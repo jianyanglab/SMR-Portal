@@ -47,40 +47,7 @@ colnames(probe_SNP_nums)=c("probeID", "Freq")
 index=which(probe_SNP_nums$Freq >= MR_snp_min)
 probe_list=as.character(probe_SNP_nums$probeID[index])
 
-# # MR comparison ----------------------------------
-# res=data.frame()
-# for(probe_id in probe_list){
-# 	print(probe_id)
-# 	QTL_clumped_tmp=QTL_clumped[which(QTL_clumped$probeID == probe_id),]
-# 	gene_name=unique(QTL_clumped_tmp$gene_name)
-
-# 	index=match(QTL_clumped_tmp$SNP, gwas$SNP, nomatch=0)
-# 	if(length(which(index!=0)) >= MR_snp_min){
-# 		QTL_clumped_tmp=QTL_clumped_tmp[which(index!=0),]
-# 		gwas_tmp=gwas[index,]
-		
-# 		bzx=QTL_clumped_tmp$b;
-# 		bzx_se=QTL_clumped_tmp$se;
-# 		bzx_pval=QTL_clumped_tmp$p;
-		
-# 		bzy=gwas_tmp$b;
-# 		bzy_se=gwas_tmp$se;
-# 		bzy_pval=gwas_tmp$p;
-
-# 		# c("GSMR_heidi_v1","IVW", "Median", "Simple_Median", "Mode", "Egger", "Robust", "Lasso",  "PRESSO", "MRMix")
-# 		for(method in c("GSMR_heidi_v1","IVW", "Egger")){
-# 			print(method)
-
-# 			res_mr = all_mr(bzx, bzx_se, bzx_pval,
-# 								bzy, bzy_se, bzy_pval, method=method, nsnps_thresh=MR_snp_min)
-# 			res = rbind(res,data.frame(gene_name=gene_name,exposure=probe_id,outcome=trait_name,method, p=res_mr$pval, bxy=res_mr$bxy,nr_pleio_rm=length(res_mr$pleio)))
-
-# 		}
-# 	}
-# }
-
 # MR comparison ----------------------------------
-
 # probe_id
 process_probe <- function(probe_id) {
   QTL_clumped_tmp <- QTL_clumped[QTL_clumped$probeID == probe_id, ]
