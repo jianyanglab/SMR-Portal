@@ -23,38 +23,52 @@ SMR=`yq .software.smr "${CONFIG}"`
 REFERENCE_bld=`yq .reference.reference_bld "${CONFIG}"`
 QTL_list=`yq .magic.QTL_list "${CONFIG}"`
 
-
 maf=`yq .smr.maf "${CONFIG}"`
 peqtl_smr=`yq .smr.peqtl_smr "${CONFIG}"`
 peqtl_heidi=`yq .smr.peqtl_heidi "${CONFIG}"`
 batch_num=`yq .smr.batch_num "${CONFIG}"`
 smr_multi_index=`yq .smr.smr_multi_index "${CONFIG}"`
-
+smr_heidi_index=`yq .smr.heidi_index "${CONFIG}"`
+magic_smr_multi_index=`yq .magic.smr_multi_index "${CONFIG}"`
+magic_smr_heidi_index=`yq .magic.heidi_index "${CONFIG}"`
 
 default_maf=0.01
 default_peqtl_smr=5e-8
 default_peqtl_heidi=1.57e-3
-default_smr_multi_index=FALSE
+default_smr_multi_index=TRUE
+default_smr_heidi_index=TRUE
 
-# maf=${maf:-$default_maf}
-# peqtl_smr=${peqtl_smr:-$default_peqtl_smr}
-# peqtl_heidi=${peqtl_heidi:-$default_peqtl_heidi}
-# 如果提取到的值为 "null" 或者为空，则使用默认值
+
+
 if [[ -z "$maf" || "$maf" == "null" ]]; then
     maf=$default_maf
 fi
-
 if [[ -z "$peqtl_smr" || "$peqtl_smr" == "null" ]]; then
     peqtl_smr=$default_peqtl_smr
 fi
-
 if [[ -z "$peqtl_heidi" || "$peqtl_heidi" == "null" ]]; then
     peqtl_heidi=$default_peqtl_heidi
 fi
 
+# ------------------------------------------------------------------------
+# run MAGIC Portal or SMR Portal analysis
+run_magic_index=`yq .magic.run_magic_index "${CONFIG}"`
+if [ "$run_magic_index" = "TRUE" ]; then
+    echo "--------------------------- Running MAGIC Portal ---------------------------"
+    smr_multi_index=$magic_smr_multi_index
+    smr_heidi_index=$magic_smr_heidi_index
+else
+    echo "--------------------------- Running SMR Portal ---------------------------"
+fi
+
+
 if [[ -z "$smr_multi_index" || "$smr_multi_index" == "null" ]]; then
     smr_multi_index=$default_smr_multi_index
 fi
+if [[ -z "$smr_heidi_index" || "$smr_heidi_index" == "null" ]]; then
+    smr_heidi_index=$default_smr_heidi_index
+fi
+
 
 
 # **** Here we take qtl as a unit. In total 230 xQTL datasets.
@@ -96,49 +110,36 @@ for i in $(seq 1 22); do
         QTL_data="${qtl_data}"
     fi
 
+    
+    cmd="${SMR} --bld ${REFERENCE_bld}_chr${i} \
+        --gwas-summary ${GWAS_DATA} \
+        --beqtl-summary ${QTL_data} \
+        --probe-chr ${i} \
+        --maf ${maf} \
+        --peqtl-smr ${peqtl_smr} \
+        --peqtl-heidi ${peqtl_heidi} \
+        --thread-num 4 \
+        --probe-chr ${i} \
+        --out ${OUTPUT}/SMR/detail/${trait_name}_${qtl_name}_chr${i}"
+
     if [ "$smr_multi_index" = "TRUE" ]; then
-        
-        "${SMR}" --bld "${REFERENCE_bld}_chr${i}" \
-            --gwas-summary "${GWAS_DATA}" \
-            --beqtl-summary "${QTL_data}" \
-            --probe-chr ${i} \
-            --maf ${maf} \
-            --peqtl-smr ${peqtl_smr} \
-            --peqtl-heidi ${peqtl_heidi} \
-            --smr-multi \
-            --thread-num 4 \
-            --probe-chr ${i} \
-            --out "${OUTPUT}/SMR/detail/${trait_name}_${qtl_name}_chr${i}" &
+        cmd="${cmd} --smr-multi"
+    fi
 
-        pids+=($!)
-        if (( i % ${batch_num} == 0 )); then
-            for pid in "${pids[@]}"; do
-                wait $pid || [ $? -eq 99 ] && true || exit $?
-            done
-            pids=()
-        fi
+    if [ "$smr_heidi_index" = "FALSE" ]; then
+        cmd="${cmd} --heidi-off"
+    fi
+    
+    echo "Executing command:"
+    echo "$cmd"
+    $cmd &
 
-    else
-
-        "${SMR}" --bld "${REFERENCE_bld}_chr${i}" \
-            --gwas-summary "${GWAS_DATA}" \
-            --beqtl-summary "${QTL_data}" \
-            --probe-chr ${i} \
-            --maf ${maf} \
-            --peqtl-smr ${peqtl_smr} \
-            --peqtl-heidi ${peqtl_heidi} \
-            --thread-num 4 \
-            --probe-chr ${i} \
-            --out "${OUTPUT}/SMR/detail/${trait_name}_${qtl_name}_chr${i}" &
-
-        pids+=($!)
-        if (( i % ${batch_num} == 0 )); then
-            for pid in "${pids[@]}"; do
-                wait $pid || [ $? -eq 99 ] && true || exit $?
-            done
-            pids=()
-        fi
-
+    pids+=($!)
+    if (( i % ${batch_num} == 0 )); then
+        for pid in "${pids[@]}"; do
+            wait $pid || [ $? -eq 99 ] && true || exit $?
+        done
+        pids=()
     fi
 
 done
