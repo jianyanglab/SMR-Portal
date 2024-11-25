@@ -10,10 +10,10 @@ import Table2 from './Table2.vue'
         Citations
       </h5>
       <p>
-        <b>Online tool and database</b>: Guo Y, Xu T, Luo J, Jiang Z, Chen W, Chen H, Qi T, Yang J (2024) SMR-Portal: an online platform for integrative analysis of GWAS and xQTL data to identify complex trait genes. Under review.
+        <b>Online tool and database</b>: Guo Y, Xu T, Luo J, Jiang Z, Chen W, Chen H, Qi T, Yang J (2024) SMR-Portal: an online platform for integrative analysis of GWAS and xQTL data to identify complex trait genes. <a class="underline" href="https://www.nature.com/articles/s41592-024-02561-7" target="_blank"><i>Nature Methods</i></a>.
       </p>
       <p>
-        <b>SMR and HEIDI methods</b>: Zhu Z, Zhang F, Hu H, Bakshi A, Robinson MR, Powell JE, Montgomery GW, Goddard ME, Wray NR, Visscher PM & Yang J (2016) Integration of summary data from GWAS and eQTL studies predicts complex trait gene targets. <a class="underline" href="https://www.nature.com/articles/ng.3538" target="_blank">Nature Genetics, 48:481-487</a>.
+        <b>SMR and HEIDI methods</b>: Zhu Z, Zhang F, Hu H, Bakshi A, Robinson MR, Powell JE, Montgomery GW, Goddard ME, Wray NR, Visscher PM & Yang J (2016) Integration of summary data from GWAS and eQTL studies predicts complex trait gene targets. <a class="underline" href="https://www.nature.com/articles/ng.3538" target="_blank"><i>Nature Genetics</i>, 48:481-487</a>.
       </p>
     </div>
 

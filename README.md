@@ -40,6 +40,6 @@ Should you have any questions, suggestions, or encounter any issues, please reac
 
 ## Citations
 
-**Online tool and database**: Guo Y, Xu T, Luo J, Jiang Z, Chen W, Chen H, Qi T, Yang J (2024) SMR-Portal: an online platform for integrative analysis of GWAS and xQTL data to identify complex trait genes. *Under review*.
+**Online tool and database**: Guo Y, Xu T, Luo J, Jiang Z, Chen W, Chen H, Qi T, Yang J (2024) SMR-Portal: an online platform for integrative analysis of GWAS and xQTL data to identify complex trait genes. [*Nature Methods*](https://www.nature.com/articles/s41592-024-02561-7)
 
 **SMR and HEIDI methods**: Zhu Z, Zhang F, Hu H, Bakshi A, Robinson MR, Powell JE, Montgomery GW, Goddard ME, Wray NR, Visscher PM & Yang J (2016) Integration of summary data from GWAS and eQTL studies predicts complex trait gene targets. [*Nature Genetics*, 48:481-487.](https://www.nature.com/articles/ng.3538)
