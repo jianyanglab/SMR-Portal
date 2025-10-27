@@ -1,6 +1,6 @@
 # SMR-Portal
 
-[**SMR Portal**](https://yanglab.westlake.edu.cn/software/smr_portal/) is a web-based platform designed for the integrative analysis of genome-wide association study (GWAS) and molecular quantitative trait locus (xQTL) summary statistics to identify genes associated with complex traits, including diseases, using the summary-data-based Mendelian Randomization (SMR) and HEIDI (Heterogeneity in Dependent Instruments) methods. It comprises three modules: **online SMR analysis**, **locus visualization**, and **SMR database**. It aims to facilitate the discovery of complex trait genes, to elucidate the regulatory mechanisms underlying GWAS signals, and to enhance the accessibility of these gene-trait associations for the research community.
+[**SMR Portal**](https://yanglab.westlake.edu.cn/smr-portal) is a web-based platform designed for the integrative analysis of genome-wide association study (GWAS) and molecular quantitative trait locus (xQTL) summary statistics to identify genes associated with complex traits, including diseases, using the summary-data-based Mendelian Randomization (SMR) and HEIDI (Heterogeneity in Dependent Instruments) methods. It comprises three modules: **online SMR analysis**, **locus visualization**, and **SMR database**. It aims to facilitate the discovery of complex trait genes, to elucidate the regulatory mechanisms underlying GWAS signals, and to enhance the accessibility of these gene-trait associations for the research community.
 
 ![SMR Portal Overview](https://static.westlakefuturegene.com/smr_images/SMR_Portal_Overview.png)
 
@@ -22,7 +22,7 @@ The locus visualization module provides interactive tools for visualizing GWAS, 
 
 ## Links
 
-SMR Portal (https://yanglab.westlake.edu.cn/software/smr_portal)
+SMR Portal (https://yanglab.westlake.edu.cn/smr-portal)
 
 SMR software (https://yanglab.westlake.edu.cn/software/smr)
 
@@ -34,12 +34,12 @@ For those interested in exploring the SMR Portal, a tutorial is available at [Tu
 
 ## Data security Statement
 
-To ensure the security of your data, you must log in to submit your GWAS summary data for the online SMR analysis. If you have not yet registered, you can do so [here](https://yanglab.westlake.edu.cn/software/smr_portal/signup). For those interested, a demo is available in [data/demo](data/demo/).
+To ensure the security of your data, you must log in to submit your GWAS summary data for the online SMR analysis. If you have not yet registered, you can do so [here](https://yanglab.westlake.edu.cn/smr-portal/signup). For those interested, a demo is available in [data/demo](data/demo/).
 
 Should you have any questions, suggestions, or encounter any issues, please reach out to us at statgenlab@westlake.edu.cn.
 
 ## Citations
 
-**Online tool and database**: Guo Y, Xu T, Luo J, Jiang Z, Chen W, Chen H, Qi T, Yang J (2024) SMR-Portal: an online platform for integrative analysis of GWAS and xQTL data to identify complex trait genes. [*Nature Methods*.](https://www.nature.com/articles/s41592-024-02561-7)
+**Online tool and database**: Guo Y, Xu T, Luo J, Jiang Z, Chen W, Chen H, Qi T, Yang J (2024) SMR-Portal: an online platform for integrative analysis of GWAS and xQTL data to identify complex trait genes. [*Nature Methods*, 22:220-222.](https://www.nature.com/articles/s41592-024-02561-7)
 
 **SMR and HEIDI methods**: Zhu Z, Zhang F, Hu H, Bakshi A, Robinson MR, Powell JE, Montgomery GW, Goddard ME, Wray NR, Visscher PM & Yang J (2016) Integration of summary data from GWAS and eQTL studies predicts complex trait gene targets. [*Nature Genetics*, 48:481-487.](https://www.nature.com/articles/ng.3538)
