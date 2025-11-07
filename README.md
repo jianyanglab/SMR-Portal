@@ -2,7 +2,8 @@
 
 [**SMR Portal**](https://yanglab.westlake.edu.cn/smr-portal) is a web-based platform designed for the integrative analysis of genome-wide association study (GWAS) and molecular quantitative trait locus (xQTL) summary statistics to identify genes associated with complex traits, including diseases, using the summary-data-based Mendelian Randomization (SMR) and HEIDI (Heterogeneity in Dependent Instruments) methods. It comprises three modules: **online SMR analysis**, **locus visualization**, and **SMR database**. It aims to facilitate the discovery of complex trait genes, to elucidate the regulatory mechanisms underlying GWAS signals, and to enhance the accessibility of these gene-trait associations for the research community.
 
-![SMR Portal Overview](https://static.westlakefuturegene.com/smr_images/SMR_Portal_Overview.png)
+![SMR Portal Overview](data/figure/SMR_Portal_Overview.png)
+<!-- ![SMR Portal Overview](https://static.westlakefuturegene.com/smr_images/SMR_Portal_Overview.png) -->
 
 ### Online SMR analysis
 
