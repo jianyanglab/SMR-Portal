@@ -119,7 +119,6 @@ for i in $(seq 1 22); do
         --peqtl-smr ${peqtl_smr} \
         --peqtl-heidi ${peqtl_heidi} \
         --thread-num 4 \
-        --probe-chr ${i} \
         --out ${OUTPUT}/SMR/detail/${trait_name}_${qtl_name}_chr${i}"
 
     if [ "$smr_multi_index" = "TRUE" ]; then
